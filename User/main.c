@@ -31,13 +31,13 @@
  */
 int main(void)
 {
-	struct BPB bpb;
+    struct BPB bpb;
 
-	SystemCoreClockUpdate( );
-	Delay_Init( );
-	USART_Printf_Init( 115200 );
+    SystemCoreClockUpdate( );
+    Delay_Init( );
+    USART_Printf_Init( 115200 );
 		
-	printf( "SystemClk:%d\r\n",SystemCoreClock );
+    printf( "SystemClk:%d\r\n",SystemCoreClock );
 
     // SPI flash init
     FLASH_Port_Init( );
@@ -74,12 +74,13 @@ int main(void)
     USBFS_Device_Init( ENABLE );
 */
 
-	// Load the BIOS Parameter Block
-	load_bpb_spi(&bpb);
-	// List files in the root directory
-	list_files_spi(&bpb);
+    // Show files name position and size from the UDISK
+    // Load the BIOS Parameter Block
+    load_bpb_spi(&bpb);
+    // List files in the root directory
+    list_files_spi(&bpb);
 
-	printf("==================== END =====================\n\n");
+    printf("==================== END =====================\n\n");
 
     // Example: Get file size of a specific file
     const char *filename_to_find = "WSCLI.HTM";
@@ -91,9 +92,9 @@ int main(void)
         printf("File %s not found\n", filename_to_find);
     }
 
-	while(1) {
+    while(1) {
 
-	}
+    }
 
-	return 0;
+    return 0;
 }
