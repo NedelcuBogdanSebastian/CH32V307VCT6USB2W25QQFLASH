@@ -57,7 +57,7 @@ To format the UDISK in Windows:
 ### 3. Alternate Formatting Method
 
 Alternatively, you can use the renamed Windows 10 format utility (`formatx.exe`) to format the Winbond dataflash memory:
-```formatx.exe F: /FS:FAT /V:FLASH /Q /X
+```formatx.exe F: /FS:FAT /V:FLASH /Q /X```
 
 **Note:** This is a quick format, and like before, trash chunks from deleted files will still be present.
 
@@ -67,7 +67,7 @@ Alternatively, you can use the renamed Windows 10 format utility (`formatx.exe`)
 
 To save the current UDISK contents to an image file, use HxD:
 
-```Open Disk > FLASH (F:) > Save the image file.
+```Open Disk > FLASH (F:) > Save the image file```
 
 ### 5. Viewing Files from the FAT12 Image
 
