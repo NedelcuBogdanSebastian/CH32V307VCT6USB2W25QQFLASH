@@ -39,7 +39,7 @@ There are three code blocks in `main.c` that you can comment/uncomment to test d
 ### 1. Initialize Flash Memory
 To initialize the flash memory for the first time, use **Win32DiskImager** to write the clean FAT12 4096 formatted image:
 
-```yaml
+yaml
 25Q32FLASHformatted.img
 
 
