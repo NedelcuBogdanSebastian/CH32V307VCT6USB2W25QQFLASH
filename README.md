@@ -38,7 +38,6 @@ There are three code blocks in `main.c` that you can comment/uncomment to test d
 
 ### 1. Initialize Flash Memory
 To initialize the flash memory for the first time, use **Win32DiskImager** to write the clean FAT12 4096 formatted image:
-
 ```25Q32FLASHformatted.img```
 
 This gives you a clean FAT12 file system on the 25Q32 FLASH memory.
@@ -58,8 +57,7 @@ To format the UDISK in Windows:
 ### 3. Alternate Formatting Method
 
 Alternatively, you can use the renamed Windows 10 format utility (`formatx.exe`) to format the Winbond dataflash memory:
-```bash
-formatx.exe F: /FS:FAT /V:FLASH /Q /X
+```formatx.exe F: /FS:FAT /V:FLASH /Q /X
 
 **Note:** This is a quick format, and like before, trash chunks from deleted files will still be present.
 
@@ -69,8 +67,7 @@ formatx.exe F: /FS:FAT /V:FLASH /Q /X
 
 To save the current UDISK contents to an image file, use HxD:
 
-```yaml
-    Open Disk > FLASH (F:) > Save the image file.
+```Open Disk > FLASH (F:) > Save the image file.
 
 ### 5. Viewing Files from the FAT12 Image
 
