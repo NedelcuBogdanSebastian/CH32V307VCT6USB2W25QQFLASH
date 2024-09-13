@@ -11,7 +11,6 @@ It adds FAT12 file system function to make:
 
 
 
-
 To initialize for the first time the flash memory
 we use the win32diskimaker to write the:
 >>> 25Q32FLASHformatted.img
